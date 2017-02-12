@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gUe-gp-sgp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gUe-gp-sgp">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -262,7 +262,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="540" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M4x-ny-QKi" id="Uxu-uX-jGV">
-                                            <rect key="frame" x="0.0" y="0.0" width="507" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="507" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDX-ST-a1Z">
@@ -282,18 +282,18 @@
                                             <segue destination="LFv-wf-RPT" kind="show" id="F35-4G-Rgq"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="DYe-sj-NUl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="DYe-sj-NUl">
                                         <rect key="frame" x="0.0" y="56" width="540" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DYe-sj-NUl" id="FsI-vY-K27">
-                                            <rect key="frame" x="0.0" y="0.0" width="540" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="540" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiP-d6-ES9">
-                                                    <rect key="frame" x="20" y="11" width="64" height="34"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiP-d6-ES9">
+                                                    <rect key="frame" x="20" y="0.0" width="520" height="55.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <state key="normal" title="Rate Us">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="rateUsAction:" destination="YaS-u0-EIZ" eventType="touchUpInside" id="DgP-2W-3li"/>
@@ -302,22 +302,25 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="hiP-d6-ES9" firstAttribute="centerY" secondItem="FsI-vY-K27" secondAttribute="centerY" id="CCl-Ip-Pnv"/>
+                                                <constraint firstAttribute="bottom" secondItem="hiP-d6-ES9" secondAttribute="bottom" id="EW6-Ob-gME"/>
                                                 <constraint firstItem="hiP-d6-ES9" firstAttribute="leading" secondItem="FsI-vY-K27" secondAttribute="leading" constant="20" id="Khf-1L-N4R"/>
+                                                <constraint firstItem="hiP-d6-ES9" firstAttribute="top" secondItem="FsI-vY-K27" secondAttribute="top" id="do3-ND-v5C"/>
+                                                <constraint firstAttribute="trailing" secondItem="hiP-d6-ES9" secondAttribute="trailing" id="vnk-Kh-9MD"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ptf-t7-L16">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="ptf-t7-L16">
                                         <rect key="frame" x="0.0" y="112" width="540" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ptf-t7-L16" id="GJd-yo-eJZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="540" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="540" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-TG-hLg">
-                                                    <rect key="frame" x="20" y="11" width="133" height="34"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-TG-hLg">
+                                                    <rect key="frame" x="20" y="0.0" width="520" height="55.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <state key="normal" title="Contact support">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="contactSupportAction:" destination="YaS-u0-EIZ" eventType="touchUpInside" id="KTM-0w-yY4"/>
@@ -325,8 +328,10 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="G8D-TG-hLg" firstAttribute="centerY" secondItem="GJd-yo-eJZ" secondAttribute="centerY" id="PXK-wZ-eiF"/>
+                                                <constraint firstItem="G8D-TG-hLg" firstAttribute="top" secondItem="GJd-yo-eJZ" secondAttribute="top" id="26Q-wM-vel"/>
+                                                <constraint firstAttribute="trailing" secondItem="G8D-TG-hLg" secondAttribute="trailing" id="T19-mW-vfS"/>
                                                 <constraint firstItem="G8D-TG-hLg" firstAttribute="leading" secondItem="GJd-yo-eJZ" secondAttribute="leading" constant="20" id="kGo-hy-o0o"/>
+                                                <constraint firstAttribute="bottom" secondItem="G8D-TG-hLg" secondAttribute="bottom" id="wRJ-dr-0rb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

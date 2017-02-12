@@ -25,6 +25,8 @@
 		8DBEE8A71DA8EE3500413084 /* MDMainSoundStudio+FlowLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBEE8A61DA8EE3500413084 /* MDMainSoundStudio+FlowLayoutDelegate.swift */; };
 		8DBEE8A91DA8FBD700413084 /* MDDurationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBEE8A81DA8FBD700413084 /* MDDurationLabel.swift */; };
 		CA67F7B61E06D2B700A18B6C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67F7B51E06D2B700A18B6C /* SettingsViewController.swift */; };
+		CA9E1CB01E50507D00E5CC9A /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA9E1CAD1E50507D00E5CC9A /* iRate.bundle */; };
+		CA9E1CB11E50507D00E5CC9A /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9E1CAF1E50507D00E5CC9A /* iRate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,10 @@
 		AD581F62B7B5B664484A63BD /* Pods-MrDudets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrDudets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MrDudets/Pods-MrDudets.debug.xcconfig"; sourceTree = "<group>"; };
 		B83AC55E10965BE94C0557E2 /* Pods-MrDudets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrDudets.release.xcconfig"; path = "Pods/Target Support Files/Pods-MrDudets/Pods-MrDudets.release.xcconfig"; sourceTree = "<group>"; };
 		CA67F7B51E06D2B700A18B6C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CA9E1CAC1E50507D00E5CC9A /* MrDudets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MrDudets-Bridging-Header.h"; sourceTree = "<group>"; };
+		CA9E1CAD1E50507D00E5CC9A /* iRate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iRate.bundle; sourceTree = "<group>"; };
+		CA9E1CAE1E50507D00E5CC9A /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
+		CA9E1CAF1E50507D00E5CC9A /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8DBEE8AA1DAA4A4F00413084 /* Resources */,
+				CA9E1CB21E50513F00E5CC9A /* iRate */,
 				60862A4A1DA425CA008B2CA5 /* MrDudets */,
 				60862A491DA425CA008B2CA5 /* Products */,
 				F861FEECAFA4A5FDB335CD4D /* Pods */,
@@ -187,6 +194,18 @@
 			name = "Settings screen";
 			sourceTree = "<group>";
 		};
+		CA9E1CB21E50513F00E5CC9A /* iRate */ = {
+			isa = PBXGroup;
+			children = (
+				CA9E1CAD1E50507D00E5CC9A /* iRate.bundle */,
+				CA9E1CAE1E50507D00E5CC9A /* iRate.h */,
+				CA9E1CAF1E50507D00E5CC9A /* iRate.m */,
+				CA9E1CAC1E50507D00E5CC9A /* MrDudets-Bridging-Header.h */,
+			);
+			name = iRate;
+			path = MrDudets;
+			sourceTree = "<group>";
+		};
 		F861FEECAFA4A5FDB335CD4D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,7 +252,7 @@
 					60862A471DA425CA008B2CA5 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = L686KWHX6R;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -261,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60862A561DA425CA008B2CA5 /* LaunchScreen.storyboard in Resources */,
+				CA9E1CB01E50507D00E5CC9A /* iRate.bundle in Resources */,
 				60862A531DA425CA008B2CA5 /* Assets.xcassets in Resources */,
 				60862A511DA425CA008B2CA5 /* Main.storyboard in Resources */,
 			);
@@ -340,6 +360,7 @@
 				8DBEE89C1DA8CA4400413084 /* MDMainSoundStudioViewController.swift in Sources */,
 				8DBEE8A91DA8FBD700413084 /* MDDurationLabel.swift in Sources */,
 				6062F7571E06B9DA00B7BB26 /* BottomPanelViewController.swift in Sources */,
+				CA9E1CB11E50507D00E5CC9A /* iRate.m in Sources */,
 				8DBEE8A21DA8DA0400413084 /* UIColor+Hex.swift in Sources */,
 				601A34321DAA293E00016A97 /* NSFileManagerExtension.swift in Sources */,
 				60862A4C1DA425CA008B2CA5 /* AppDelegate.swift in Sources */,
@@ -468,12 +489,15 @@
 			baseConfigurationReference = AD581F62B7B5B664484A63BD /* Pods-MrDudets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L686KWHX6R;
 				INFOPLIST_FILE = MrDudets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chachacha.MrDudets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MrDudets/MrDudets-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -483,12 +507,14 @@
 			baseConfigurationReference = B83AC55E10965BE94C0557E2 /* Pods-MrDudets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L686KWHX6R;
 				INFOPLIST_FILE = MrDudets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chachacha.MrDudets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MrDudets/MrDudets-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

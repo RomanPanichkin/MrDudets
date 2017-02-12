@@ -17,8 +17,9 @@ class SettingsViewController: UITableViewController, MFMailComposeViewController
     
     
     @IBAction func rateUsAction(_ sender: UIButton) {
-        //TO DO: implement a rate the app action
         Answers.logCustomEvent(withName: "RateUsInSettings button pressed", customAttributes: nil)
+        
+        iRate.sharedInstance().promptForRating()
     }
     
     @IBAction func letsDudetsAction(_ sender: UIBarButtonItem) {

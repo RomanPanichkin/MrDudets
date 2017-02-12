@@ -19,6 +19,8 @@ class BottomPanelViewController : UIViewController {
     
     @IBAction func rateUsButtonAction(_ sender: UIButton) {
         Answers.logCustomEvent(withName: "RateUs button pressed", customAttributes: nil)
+        
+        iRate.sharedInstance().promptForRating()
     }
     
 }
